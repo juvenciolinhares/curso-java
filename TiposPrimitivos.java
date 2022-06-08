@@ -18,15 +18,19 @@ public class TiposPrimitivos {
 		float temperatura= 36.5f;
 
 		//formato binario:
-		byte bb = 0b01010101;//System.out.println(bb);=> 85
-		short ss = 0b0101010101010101;//System.out.println(ss);=> 21845
-		int ii = 0b01010101010101010101010101010101;	//System.out.println(ii);=> 1431655765
-
+		byte bb = 0b01010101;
+		short ss = 0b0101010101010101;
+		int ii = 0b01010101010101010101010101010101;	
+		System.out.println(bb);
+		System.out.println(ss);
+		System.out.println(ii);
+		
 		//cast implicito: uma variavel menor "cabe numa maior"
 		i = s;
-		//System.out.println(i); => 32760
+		System.out.println(i);
+		
 		//cast explicito=> quando assumo a perda de informações:
 		i = (int)peso;
-		//System.out.println(i);=> 56, pedir os valores decimais. 
+		System.out.println(i); 
 	}
 }
